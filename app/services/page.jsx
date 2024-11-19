@@ -9,28 +9,28 @@ const services = [
     num: "01",
     title: "Web Development",
     descreption:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, atque quia.",
+      "Building responsive, high-performance websites with modern technologies, ensuring seamless functionality across all devices.",
     href: "",
   },
   {
     num: "02",
-    title: "UI/UX Design",
+    title: "Building Figma Designs",
     descreption:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, atque quia.",
+      "Transforming Figma designs into pixel-perfect, interactive, and fully functional web pages with clean, efficient code.",
     href: "",
   },
   {
     num: "03",
     title: "Git & GitHub",
     descreption:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, atque quia.",
+      "Managing version control and streamlining team collaboration using Git and GitHub for organized, efficient workflows.",
     href: "",
   },
   {
     num: "04",
     title: "Landing Pages",
     descreption:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, atque quia.",
+      "Creating visually appealing, fast-loading landing pages optimized for user engagement and lead generation.",
     href: "",
   },
 ];

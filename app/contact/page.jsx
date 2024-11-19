@@ -14,7 +14,7 @@ const info = [
   {
     icon : <FaEnvelope/>,
     title : 'Email',
-    desc : "mohammadkerdasi033@gmail.com  "
+    desc : "mohammadkerdasi033@gmail.com "
   },
   {
     icon : <FaMapMarkerAlt/>,
@@ -59,12 +59,12 @@ const Contact = () => {
           <ul className="flex flex-col gap-10">
             {info.map((item, index) => (
               <li key={index} className="flex items-center gap-4">
-                <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
-                  <div className="text-[28px]">{item.icon}</div>
+                <div className="w-[40px] h-[40px] md:w-[72px] md:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
+                  <div className="md:text-[28px]">{item.icon}</div>
                 </div>
                 <div className="flex-1">
                   <p className="text-white/60">{item.title}</p>
-                  <h3 className="md:text-[20px] text-[14px]">{item.desc}</h3>
+                  <h3 className="md:text-[20px] text-[13px]">{item.desc}</h3>
                 </div>
               </li>
             ))}

@@ -45,12 +45,12 @@ const experience = {
     {
       company : 'Focal x agency',
       position : 'Front-End Developer BEG Intern',
-      duration : 'Winter 2023'
+      duration : 'December 2023'
     },
     {
       company : 'Focal x agency',
       position : 'Front-End Developer ADV Intern',
-      duration : 'Summer 2024'
+      duration : 'August 2024'
     },
   ]
 }
@@ -61,19 +61,24 @@ const education = {
   descerption : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iste accusantium praesentium.',
   items: [
     {
-      institution : 'Front-End Developer BEG ',
+      institution : ' Focal X Agency ',
       degree : 'Intern Certified Front-End BEG Web Developer',
-      duration : 'Winter 2023 - Summer 2024'
+      duration : 'December 2023 - July 2024'
     },
     {
-      institution : 'Front-End Developer ADV ',
+      institution : ' Focal X Agency ',
       degree : ' Intern Certified Front-End ADV Web Developer',
-      duration : 'Winter 2023 - Summer 2024'
+      duration : 'August 2023 - January 2024'
     },
     {
       institution : 'Front-End Track ',
       degree : '  Front-End Web Development Bootcamp',
-      duration : 'Summer 2024 - Winter 2024'
+      duration : 'February 2024 - May 2024'
+    },
+    {
+      institution : ' Tishreen University ',
+      degree : ' Computer engineering Third Year   ',
+      duration : 'Septemper 2022 - Until Now'
     },
   ]
 }
@@ -157,11 +162,11 @@ const Resume = () => {
               <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                 {experience.items.map((item,index) => {
                   return (
-                  <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                  <li key={index} className="bg-[#232329] md:h-[200px] h-[300px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
                     <span className="text-accent">{item.duration}</span>
                     <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
                     <div className="flex items-center gap-3">
-                      <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                      <span className="w-[10px] h-[10px] rounded-full bg-accent"></span>
                       <p className="text-white/60">{item.company}</p>
                     </div>
                   </li>
@@ -181,11 +186,11 @@ const Resume = () => {
               <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                 {education.items.map((item,index) => {
                   return (
-                  <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                  <li key={index} className="bg-[#232329] md:h-[200px] h-[300px] py-6 px-8 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
                     <span className="text-accent">{item.duration}</span>
                     <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
                     <div className="flex items-center gap-3">
-                      <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                      <span className="w-[10px] h-[10px] rounded-full bg-accent"></span>
                       <p className="text-white/60">{item.institution}</p>
                     </div>
                   </li>
@@ -223,11 +228,11 @@ const Resume = () => {
           <div className="flex flex-col gap-[30px]">
             <h3 className="text-4xl font-bold">{about.title}</h3>
             <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0"></p>
-            <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+            <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 md:max-w-[700px] max-w-[620px] mx-auto xl:mx-0">
               {about.info.map((item, index) =>(
                 <li className="flex items-center justify-center xl:justify-start gap-4" key={index}>
-                  <span className="text-white/60">{item.fieldName}</span>
-                  <span className="text-xl">{item.feildValue}</span>
+                  <span className="text-white/60 md:text-[18px] text-[14px]">{item.fieldName}</span>
+                  <span className="md:text-xl text-[14px]">{item.feildValue}</span>
                 </li>
               ))}
             </ul>
